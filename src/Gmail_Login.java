@@ -1,7 +1,7 @@
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver;//References the WebDriver interface which is required to instantiate a new web browser.
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;//References the FirefoxDriver class that is required instantiate a Firefox specific driver on the browser
 
 
 public class Gmail_Login {
