@@ -10,24 +10,28 @@ import org.junit.Test;
 
 public class PruebaJunit {
     @BeforeClass
-    public static void beforeClassTest(){
+    public static void beforeClassTest() {
         System.out.println("Executed before class method");
     }
+
     @Before // annotacions is used to run any specific test before each test
-    public void beforeTest(){
+    public void beforeTest() {
         System.out.println("Running before test");
     }
 
     @Test // annotacions is used  to run a Junit
-    public void junitTest(){
+    public void junitTest() {
+
         System.out.println("Running Junit test");
     }
+
     @Test
-    public void SecondJunitTest(){
+    public void SecondJunitTest() {
         System.out.println("Running second Junit test");
     }
+
     @AfterClass
-    public static void afterClassTest(){
+    public static void afterClassTest() {
         System.out.println("Running after class method");
     }
 
