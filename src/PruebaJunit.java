@@ -16,6 +16,7 @@ public class PruebaJunit {
 
     @Before // annotacions is used to run any specific test before each test
     public void beforeTest() {
+
         System.out.println("Running before test");
     }
 

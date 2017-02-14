@@ -1,6 +1,7 @@
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
 import java.util.Arrays;
 import java.util.Collection;
 
@@ -18,11 +19,6 @@ public class ParameterizedJunitClass {
         this.age = age;
     }
 
-    @Test
-    public void testMethod(){
-        System.out.println("Name is: "+ name + "and age is: "+ age);
-    }
-
     @Parameters
     private static Collection<Object[]> parameter(){
         Object[][] pData = new Object[2][2];
@@ -32,7 +28,13 @@ public class ParameterizedJunitClass {
         pData[1][1] = 40;
 
         return Arrays.asList(pData);
-     }
+    }
+
+    @Test
+    public void testMethod(){
+        System.out.println("Name is: "+ name + "and age is: "+ age);
+    }
+
 
 
 
